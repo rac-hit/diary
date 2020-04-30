@@ -1,0 +1,10 @@
+<% include partials/header.ejs %>
+
+<h1>Home</h1>
+<p><%= homeStartingContent %></p>
+<% posts.forEach(function(posts){ %>
+  <h1><%= posts.title %></h1>
+  <p class="restrict"><%= posts.post %></p>
+  <a href="/posts/<%= posts.title %>">Read More</a>
+<% }) %>
+<% include partials/footer.ejs %>
