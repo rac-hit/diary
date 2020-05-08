@@ -4,7 +4,7 @@
 <p><%= homeStartingContent %></p>
 <% posts.forEach(function(posts){ %>
   <h1><%= posts.title %></h1>
-  <p class="restrict"><%= posts.post %></p>
+  <p class="restrict"><%= posts.content %></p>
   <a href="/posts/<%= posts.title %>">Read More</a>
 <% }) %>
 <% include partials/footer.ejs %>
